@@ -1,3 +1,10 @@
+# Docker
+
+## Установка через windows power shell
+
+Invoke-WebRequest -Uri "https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe" -OutFile "$env:TEMP\DockerDesktopInstaller.exe"
+Start-Process -Wait -FilePath "$env:TEMP\DockerDesktopInstaller.exe" -ArgumentList "install --quiet"
+
 # Git
 
 ## Скопировать все файлы\папки из одной ветки в другую через push
